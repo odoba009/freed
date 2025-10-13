@@ -1,0 +1,234 @@
+.my-navbar{
+    background-color: #002d7b;
+}
+
+a{
+  color: black;
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #002d7b;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    }
+  
+    @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    } 
+  
+    .loader-container{
+      position: fixed;
+      top: 0;
+      height: 100vh;
+      width: 100vw;
+      background-color: rgba(0, 0, 0, 0.197);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hide{
+        display: none !important;
+    }
+
+    .kylexy{
+        width: 300px;
+        margin: 0;
+    }
+
+    .kylexy img{
+        margin: 0;
+        object-fit: contain !important;
+    }
+
+    .btn-info{
+        border: none;
+        padding: 10px 30px;
+        border-radius: 20px;
+        background-color: white;
+        color: #002d7b;
+        font-weight: bolder;
+        font-size: 17px;
+    }
+
+    .sub-heading{
+        font-size: 25px;
+    }
+
+
+.bank-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.bank-modal {
+   position: relative;
+  background: #fff;
+  width: 400px;
+  max-width: 90%;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  animation: slideUp 0.3s ease;
+  font-family: 'Inter', sans-serif;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.bank-modal-header {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.bank-modal-header h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 0;
+  color: #111;
+}
+
+.bank-modal-header p {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 4px;
+}
+
+.bank-search input {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.bank-search input:focus {
+  border-color: #0066ff;
+}
+
+.bank-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 12px;
+  margin-top: 20px;
+}
+
+
+.bank-item {
+  background: #fafafa;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 16px 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  height: 120px; /* gives each card some breathing room */
+  justify-content: center;
+}
+
+.bank-item:hover {
+  background: #f0f8ff;
+  border-color: #0066ff;
+  transform: translateY(-2px);
+}
+
+.bank-item img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+}
+
+.bank-item span {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #222;
+}
+
+/* style the close button */
+.close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: #f5f5f5;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.3rem;
+ color: #333;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.close-btn:hover {
+  background: #e6f0ff;
+  color: #0066ff;
+  transform: rotate(90deg);
+}
+
+
+.bank-modal-footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.85rem;
+  color: #777;
+}
+
+.bank-modal-footer a {
+  color: #0066ff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.bank-modal-footer a:hover {
+  text-decoration: underline;
+}
+
+.open-modal-btn {
+  background: #0066ff;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: background 0.2s ease;
+}
+
+.open-modal-btn:hover {
+  background: #0052cc;
+}

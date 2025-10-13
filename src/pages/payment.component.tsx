@@ -12,7 +12,8 @@ type Additional = {
 
 export const PaymentOptions: React.FC<PaymentOptionsProps> = ({ onSelect }) => {
     const [selected, setSelected] = useState("");
-const [formInput, setFormInput] = useState<Additional>({
+// const [formInput, setFormInput] = useState<Additional>({
+const [_, setFormInput] = useState<Additional>({
     schoolNumber: "",
     resumptionDate: "",
     entryCode: "",
@@ -65,7 +66,8 @@ const [formInput, setFormInput] = useState<Additional>({
     }));
   }
 
-  const [isLoading, setIsLoading] = useState(false)
+  
+  // const [isLoading, setIsLoading] = useState(false)
 
 
     return (
@@ -117,7 +119,7 @@ const [formInput, setFormInput] = useState<Additional>({
             <div style={{ "marginTop": "20px;" }} className="field is-grouped">
               <div style={{ "width": "100%" }} className="control">
                 <div className="gradient-button">
-                  {!isLoading ?
+                  {!false ?
                   <button type="submit" >
                     Submit
                 </button>

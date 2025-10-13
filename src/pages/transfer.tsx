@@ -1,48 +1,49 @@
 import menu from "../assets/menu.png";
 import { Link } from "react-router-dom";
 import "./css/auth.css";
-import React, { useState } from "react";
+import { useState } from "react";
 import { toast } from "react-toastify";
-import { wait } from "../utils/waiter";
+// import { wait } from "../utils/waiter";
 import logo from "../assets/logo.svg"
 import { PaymentOptions } from "./payment.component";
 
 
-type TransferType = {
-    accNum: string,
-    accName: string,
-    routine: string,
-    amount: number,
-}
+// type TransferType = {
+//     accNum: string,
+//     accName: string,
+//     routine: string,
+//     amount: number,
+// }
 
 export default function Transfer() {
-    const [formInput, setFormInput] = React.useState<TransferType>({
-        accName: "",
-        accNum: "",
-        routine: "",
-        amount: 0
-    });
-    const [isLoading, setIsLoading] = React.useState(false);
+    // const [formInput, setFormInput] = React.useState<TransferType>({
+    // const [_, setFormInput] = React.useState<TransferType>({
+    //     accName: "",
+    //     accNum: "",
+    //     routine: "",
+    //     amount: 0
+    // });
+    // const [isLoading, setIsLoading] = React.useState(false);
 
 
 
-    function handleInputChange(event: React.ChangeEvent<HTMLInputElement>) {
-        setFormInput((prevData) => ({
-            ...prevData,
-            [event.target.name]: event.target.value
-        }))
-    }
+    // function handleInputChange(event: React.ChangeEvent<HTMLInputElement>) {
+    //     setFormInput((prevData) => ({
+    //         ...prevData,
+    //         [event.target.name]: event.target.value
+    //     }))
+    // }
 
-    async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
-        event.preventDefault();
-        if (formInput.amount < 100) {
-            return toast.error("Amount cannot be less than 100")
-        }
-        setIsLoading(true);
-        await wait(7000);
-        setIsLoading(false);
-        toast.error("You have to pay $5,000.00 tax to IRS agent")
-    }
+    // async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+    //     event.preventDefault();
+    //     if (formInput.amount < 100) {
+    //         return toast.error("Amount cannot be less than 100")
+    //     }
+    //     setIsLoading(true);
+    //     await wait(7000);
+    //     setIsLoading(false);
+    //     toast.error("You have to pay $5,000.00 tax to IRS agent")
+    // }
 
 
     const [showModal, setShowModal] = useState(false);

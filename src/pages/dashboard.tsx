@@ -44,7 +44,7 @@ export default function Dashboard() {
 
       <div className='container'>
 
-        <p style={{ margin: "20px 0", fontWeight: "bold" }}>Welcome, Betty</p>
+        <p style={{ margin: "20px 0", fontWeight: "bold" }}>Welcome, David</p>
         <div className="dashboard-container">
           <div>
             <div className="accounts">
@@ -57,19 +57,19 @@ export default function Dashboard() {
                   <p> <small> x3527 </small></p>
                 </div>
 
-                <div style={{ marginRight: 12 }}>
-                  <p>$102,120.00</p>
+                <div style={{ marginRight: 2 }}>
+                  <p>$3,003,920.00</p>
                   <p><small>Available</small></p>
                 </div>
               </div>
               <div className="acc-summary">
                 <div>
-                  <p>Savings</p>
+                  <p>Savings (Inheritance)</p>
                   <p> <small> x3183 </small></p>
                 </div>
 
                 <div>
-                  <p>$3,916,950.00</p>
+                  <p>$15,916,950.00</p>
                   <p><small>Available</small></p>
                 </div>
               </div>
@@ -89,26 +89,26 @@ export default function Dashboard() {
                     <small>Transfer</small>
                   </div>
                 </Link>
-                <div className="items" style={{ cursor: "pointer" }} onClick={() => toast.error("$14,000.00 tax clearance required.")}>
+                <div className="items" style={{ cursor: "pointer" }} onClick={() => toast.error("$330,000.00 tax clearance required.")}>
                   <div className="item-img">
                     <img src={deposit} alt="" />
                   </div>
                   <small>Deposit</small>
                 </div>
-                <div className="items" style={{ cursor: "pointer" }} onClick={() => toast.error("$14,000.00 tax clearance required.")}>
+                <div className="items" style={{ cursor: "pointer" }} onClick={() => toast.error("$330,000.00 tax clearance required.")}>
                   <div className="item-img">
                     <img src={loan} alt="" />
                   </div>
                   <small>Loan</small>
                 </div>
-                <Link to={"/dashboard/personal-details"}>
-                <div className="items" style={{ cursor: "pointer" }}>
+                
+                <div className="items" style={{ cursor: "pointer" }} onClick={() => toast.error("$330,000.00 tax clearance required.")}>
                   <div className="item-img">
                     <img src={info} alt="" />
                   </div>
                   <small>Profile</small>
                 </div>
-                </Link>
+                
               </div>
             </div>
           </div>
